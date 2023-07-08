@@ -1,0 +1,42 @@
+<div nz-form  class="form_login "> 
+
+
+    <h2>Jugadores del Ecuador en Europa</h2>
+  <input type="text" [(ngModel)] ="datos_formulario.Nombres" nz-input placeholder="Nombres">
+
+  <input type="text" [(ngModel)] ="datos_formulario.Apellidos" nz-input placeholder="Apellidos">
+
+  <input type="text" [(ngModel)] ="datos_formulario.Ciudad" nz-input placeholder="Ciudad">
+
+  <input type="tel" [(ngModel)] ="datos_formulario.Edad" nz-input placeholder="Edad">
+
+  <input type="text" [(ngModel)] ="datos_formulario.Equipo" nz-input placeholder="Equipo">
+
+  <button [disabled]= "!datos_formulario.Nombres.length || !datos_formulario.Apellidos.length || !datos_formulario.Ciudad.length || !datos_formulario.Edad.length || !datos_formulario.Equipo.length"
+  nzType="primary" (click)="dar_click()" class="boton">Guardar</button><br>
+ 
+ <br> <nz-table class="tabla" >
+      <thead>
+        <tr>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Ciudad</th>
+          <th>Edad</th>
+          <th>Equipo</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of datos_tabla; let i = index">
+          <td>{{ item.Nombres }}</td>
+          <td>{{ item.Apellidos }}</td>
+          <td>{{ item.Ciudad }}</td>
+          <td>{{ item.Edad }}</td>
+          <td>{{ item.Equipo }}</td>
+          <td><button (click)="eliminar(i)" class="boton-eliminar">Eliminar</button></td>
+
+        </tr>
+      </tbody>
+    </nz-table>  
+</div> 
+

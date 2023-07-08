@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(217, 247, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .lado_izquierdo{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.imagen{
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.perfil h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.perfil h2 span{
+    font-size: 15px;
+    text-align: left;
+}
+.contacto{
+    padding-top: 150px;
+}
+.titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contacto ul{
+    position: relative;
+}
+.contacto ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.contacto ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contacto ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.container .lado_derecho{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+.perfil1{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+p{
+    color: #333;
+    font-family: Open sans-serif;
+}
+.perfil2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.sub{
+    color: #333;
+    font-family: Open sans-serif;
+
+}
+.Experiencia{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.sub2{
+    color: #333;
+    font-family: Open sans-serif;
+}
+.sub3{
+    color: #333;
+    font-family: Open sans-serif;
+}
+.Estudios{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.letras{
+    color: white;
+}
+
+/*ESTUDIANTE 2*/
+.container4{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #ad10b3;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container4 .lado_izquierdo4{
+    position: relative;
+    background-color: #fd85e3;
+    padding: 40px;
+}
+.perfil4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid ad10b3(255, 255, 255, 0.4);
+}
+.imagen4{
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.perfil4 h2{
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.perfil4 h2 span{
+    font-size: 15px;
+    text-align: left;
+}
+.contacto4{
+    padding-top: 150px;
+}
+.titulo4{
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contacto4 ul{
+    position: relative;
+}
+.contacto4 ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.contacto4 ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contacto4 ul li span{
+    color: #000000;
+    font-weight: 300;
+}
+.container4 .lado_derecho4{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+.perfil4{
+    color: #ad10b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+p{
+    color: #333;
+    font-family: Open sans-serif;
+}
+.perfil5{
+    color: #ad10b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.sub4{
+    color: #333;
+    font-family: Open sans-serif;
+
+}
+.Experiencia4{
+    color: #ad10b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.sub5{
+    color: #333;
+    font-family: Open sans-serif;
+}
+.sub6{
+    color: #333;
+    font-family: Open sans-serif;
+}
+.Estudios4{
+    color: #ad10b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.letras4{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+

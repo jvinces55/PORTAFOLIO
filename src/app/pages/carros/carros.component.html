@@ -1,0 +1,44 @@
+<div nz-form class="form_login"> 
+
+
+    <h2>Marcas de carros del mundo entero</h2>
+  <input type="text" [(ngModel)] ="datos_formulario.Marcas" nz-input placeholder="Marca">
+
+  <input type="text" [(ngModel)] ="datos_formulario.Modelos" nz-input placeholder="Modelos">
+
+  <input type="text" [(ngModel)] ="datos_formulario.Cilindraje" nz-input placeholder="Cilindraje">
+
+  <input type="tel" [(ngModel)] ="datos_formulario.Ano" nz-input placeholder="Año">
+
+  
+
+
+  <button [disabled]= "!datos_formulario.Marcas.length || !datos_formulario.Modelos.length || !datos_formulario.Cilindraje.length || !datos_formulario.Ano.length"
+  nzType="primary" (click)="dar_click()" class="boton">Guardar</button><br>
+
+
+  
+ <br> <nz-table class="tabla" >
+      <thead>
+        <tr>
+          <th>Marcas</th>
+          <th>Modelos</th>
+          <th>Cilindraje</th>
+          <th>Año</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of datos_tabla; let i = index">
+          <td>{{ item.Marcas}}</td>
+          <td>{{ item.Modelos }}</td>
+          <td>{{ item.Cilindraje}}</td>
+          <td>{{ item.Ano}}</td>
+          <td><button (click)="eliminar(i)" class="boton-eliminar">Eliminar</button></td>
+
+        </tr>
+      </tbody>
+    </nz-table>  
+
+</div> 
+
