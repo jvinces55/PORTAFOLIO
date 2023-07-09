@@ -14,6 +14,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
 })
 export  class PortafolioComponent implements OnInit {
     imagenUrl: string = 'assets/images/imagen2.jpg';
+    imagenUrl1: string = 'assets/images/imagen3.jpg';
   usuarioForm!: FormGroup;
   modalVisible = false;
 
